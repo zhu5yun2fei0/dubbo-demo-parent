@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yunfei</groupId>
+  <artifactId>dubbo-demo-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <!-- 依赖版本管理 -->
+  <properties>
+  	<!-- 版本抽取    剩下的类似-->
+  	<dubbo.version>2.6.0</dubbo.version>
+  </properties>
+  
+  <!-- 依赖管理  仅仅定义需要的依赖 -->
+  <dependencyManagement>
+  	<dependencies>
+  	<dependency>
+  		<groupId>com.alibaba</groupId>
+  		<artifactId>dubbo</artifactId>
+  		<!-- 抽取后的样式 -->
+  		<version>${dubbo.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.101tec</groupId>
+  		<artifactId>zkclient</artifactId>
+  		<version>0.10</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.curator</groupId>
+  		<artifactId>curator-framework</artifactId>
+  		<version>4.0.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.alibaba</groupId>
+  		<artifactId>fastjson</artifactId>
+  		<version>1.2.46</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>log4j</groupId>
+  		<artifactId>log4j</artifactId>
+  		<version>1.2.17</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  		<version>1.7.25</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.commons</groupId>
+  		<artifactId>commons-lang3</artifactId>
+  		<version>3.4</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>io.netty</groupId>
+  		<artifactId>netty-all</artifactId>
+  		<version>4.0.35.Final</version>
+  	</dependency>
+  </dependencies>
+  </dependencyManagement>
+</project>
